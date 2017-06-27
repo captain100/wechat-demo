@@ -1,0 +1,22 @@
+page {
+  height: 100%;
+  background: #1296db;
+}
+.wrapper {
+  width: 600rpx;
+  height: 800rpx;
+  margin: 80rpx auto;
+  background: #fff;
+  box-shadow: 0 0 20rpx #ccc;
+}
+
+.wrapper .icon {
+  background: url('../../images/card.png');
+  width: 100%;
+}
+
+.wrapper .header {
+  text-align: center;
+  font-weight: 900;
+  font-size: 40rpx;
+}

@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view>
+  <view class="apps-wrapper">
+    <block wx:for="{{appInfo}}" wx:for-index="i" wx:key="i">
+      <view wx:if="{{ i % 4 == 0 }}" class="apps-row" bindtap="onAddToPackage">
+        <view wx:if="{{appInfo[i]}}" class="app-icon" >
+          <view class="app-text" data-type="{{appInfo[i].type}}" style="background:{{appInfo[i].color}};">{{appInfo[i].title}}</view>
+        </view>
+        <view wx:if="{{appInfo[i + 1]}}" class="app-icon">
+            <view class="app-text" data-type="{{appInfo[i + 1].type}}" style="background:{{appInfo[i + 1].color}};">{{appInfo[i + 1].title}}</view>
+        </view>
+        <view wx:if="{{appInfo[i + 2]}}" class="app-icon">
+            <view class="app-text" data-type="{{appInfo[i + 2].type}}" style="background:{{appInfo[i + 2].color}};">{{appInfo[i + 2].title}}</view>
+        </view>
+        <view wx:if="{{appInfo[i + 3]}}" class="app-icon" bindtap="onAddToPackage">
+            <view class="app-text" data-type="{{appInfo[i + 3].type}}" style="background:{{appInfo[i + 3].color}};">{{appInfo[i + 3].title}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+ <view class="container">
+    <view  bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+    <view>
+      <button open-type="share">
+        分享
+      </button>
+    </view>
+  </view>
+</view>

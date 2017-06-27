@@ -1,0 +1,23 @@
+<view class="wrapper">
+    <view class="header">
+        在每个标题下，请在能最恰当地描述您
+        <text>今天 </text>的健康状况的
+        <text>一个 </text>方格打‘✓’
+    </view>
+    <block wx:for="{{questions}}"  wx:for-item="itemName">
+        <view class="context">
+            <view class="question">
+                {{itemName.title}}
+            </view>
+            <view class="question-tiems">
+                <view class="padding-left-color" style="background:{{itemName.padColor}};"></view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label class="radio" wx:for="{{itemName.items}}">
+                        <radio class="radio-item" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                    </label>
+                </radio-group>
+            </view>
+        </view>
+    </block>
+
+</view>
