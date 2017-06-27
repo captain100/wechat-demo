@@ -1,7 +1,7 @@
 .wrapper {
     margin: 10rpx 15rpx;
     background: #fff;
-    color: #8e8e8e;
+    color: #5e5e5e;
 }
 
 .wrapper .header {

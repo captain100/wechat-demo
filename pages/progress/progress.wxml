@@ -1,0 +1,16 @@
+<view>
+    <view>
+        我们想知道您今天健康状况的好坏
+    </view>
+    <view class="wrapper"> 
+        <progress class="progress-box"  percent="10" stroke-width="20">
+        </progress>
+        <movable-area class="movable-wrapper">
+            <movable-view class="movable-bar" bindtouchmove="changePerent" bindtouchend="" x="{{x}}" direction="horizontal">
+            </movable-view>
+        </movable-area>
+    </view>
+
+
+    <slider class="slider-bar" min="0" max="100" step="10" />
+</view>

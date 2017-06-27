@@ -20,4 +20,6 @@
         </view>
     </block>
 
+    <button type="primary" size="20" bindtap="nextStep"> 下一项测试 </button>
+
 </view>

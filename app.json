@@ -1,6 +1,8 @@
 {
     "pages": [
         "pages/questionnaire/questionnaire",
+        "pages/progress/progress",
+        "pages/slider/slider",
         "pages/index/index",
         "pages/logs/logs",
         "pages/card/card"

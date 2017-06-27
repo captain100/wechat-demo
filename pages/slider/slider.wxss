@@ -1,0 +1,21 @@
+.wrapper {
+    margin: 20rpx 20rpx 50rpx 20rpx;
+    padding: 20rpx;
+    box-shadow: 0 0 20rpx #eee;
+    font-size:  40rpx;
+    line-height: 60rpx;
+    color: #5e5e5e;
+}
+
+.wrapper .context {
+    text-indent: 50rpx;
+}
+
+.wrapper .score {
+    margin: 30rpx;
+    text-align: center;
+    font-size: 70rpx;
+    font-weight: 900;
+    transform: scale(2);
+    
+}

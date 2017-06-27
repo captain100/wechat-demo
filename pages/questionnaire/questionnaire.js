@@ -3,7 +3,7 @@ Page({
     questions: [
       {
         title: '行动能力',
-        padColor: '#d09a45',
+        padColor: '#cf3e36',
         items: [
           { name: "USA", value: "我四处走动没有困难" },
           { name: "CHN", value: "我四处走动有一点困难" },
@@ -58,5 +58,11 @@ Page({
       }
     ]
   },
-  onload: function() {}
+  onload: function() {},
+  nextStep: function(){
+    console.log(1111)
+    wx.navigateTo({
+      url: '/pages/slider/slider',
+    })
+  }
 });
