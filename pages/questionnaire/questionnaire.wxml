@@ -4,22 +4,33 @@
         <text>今天 </text>的健康状况的
         <text>一个 </text>方格打‘✓’
     </view>
-    <block wx:for="{{questions}}"  wx:for-item="itemName">
-        <view class="context">
-            <view class="question">
-                {{itemName.title}}
+    <form bindsubmit="formSubmit">
+        <block wx:for="{{questions}}"  wx:for-item="itemName">
+            <view class="context">
+                <view class="question">
+                    {{itemName.title}}
+                </view>
+                <view class="question-tiems">
+                    <view class="padding-left-color" style="background:{{itemName.padColor}};"></view>
+                    <radio-group class="radio-group" bindchange="radioChange" name="{{itemName.name}}">
+                        <label class="radio" wx:for="{{itemName.items}}">
+                            <radio class="radio-item" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                        </label>
+                    </radio-group>
+                </view>
             </view>
-            <view class="question-tiems">
-                <view class="padding-left-color" style="background:{{itemName.padColor}};"></view>
-                <radio-group class="radio-group" bindchange="radioChange">
-                    <label class="radio" wx:for="{{itemName.items}}">
-                        <radio class="radio-item" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
-                    </label>
-                </radio-group>
-            </view>
-        </view>
-    </block>
+        </block>
 
-    <button type="primary" size="20" bindtap="nextStep"> 下一项测试 </button>
+        <button type="primary" size="20" formType="submit" > 提交测试 </button>
+    </form>
+
+    <view wx:if="{{isShow}}" class="result-panel">
+        <view class="panel-context" bindtap="closePanel">
+            <view>您的utility是</view>
+
+            {{score / 1000}}
+            <button type="primary" size="20" bindtap="nextStep">下一项测试</button>
+        </view>
+    </view>
 
 </view>

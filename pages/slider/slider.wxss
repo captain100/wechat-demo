@@ -11,11 +11,15 @@
     text-indent: 50rpx;
 }
 
-.wrapper .score {
-    margin: 30rpx;
-    text-align: center;
+.wrapper .score-box {
     font-size: 70rpx;
     font-weight: 900;
-    transform: scale(2);
-    
+    height: 80rpx;
+    margin: 50rpx 0;
+    text-align: center;
+
 }
+.wrapper .score-box .score {
+    font-size: 120rpx;
+}
+
