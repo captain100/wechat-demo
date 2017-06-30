@@ -1,8 +1,6 @@
 <view class="wrapper">
     <view class="header">
-        在每个标题下，请在能最恰当地描述您
-        <text>今天 </text>的健康状况的
-        <text>一个 </text>方格打‘✓’
+        在每个标题下，请在能最恰当地描述您<text>今天</text>的健康状况的<text>一个</text>方格打'✓'
     </view>
     <form bindsubmit="formSubmit">
         <block wx:for="{{questions}}"  wx:for-item="itemName">
@@ -26,9 +24,9 @@
 
     <view wx:if="{{isShow}}" class="result-panel">
         <view class="panel-context" bindtap="closePanel">
-            <view>您的utility是</view>
-
-            {{score / 1000}}
+            <image src="/images/docter.png" mode="aspectFit" class="logo"/>
+            <view class="title">您的utility是</view>
+            <view class="score"> {{score / 1000}} </view>
             <button type="primary" size="20" bindtap="nextStep">下一项测试</button>
         </view>
     </view>
