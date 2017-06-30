@@ -1,9 +1,10 @@
 {
     "pages": [
+        "pages/toupiao/toupiao",
+        "pages/index/index",
         "pages/questionnaire/questionnaire",    
         "pages/slider/slider",
         "pages/progress/progress",
-        "pages/index/index",
         "pages/logs/logs",
         "pages/card/card"
     ],

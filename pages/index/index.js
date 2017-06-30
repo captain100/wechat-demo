@@ -21,6 +21,11 @@ Page({
         title: '卷',
         color: '',
         type: 'questionnaire'
+      },
+      {
+        title: '投',
+        color: '#cf3e36',
+        type: 'toupiao'
 
       }
     ]
@@ -78,7 +83,8 @@ function selectPageByType(type){
   const path = '/pages'
   const selectObj = {
     weChatCard: `${path}/card/card`,
-    questionnaire: `${path}/questionnaire/questionnaire`
+    questionnaire: `${path}/questionnaire/questionnaire`,
+    toupiao: `${path}/toupiao/toupiao`
   }
   return selectObj[type]
 }
