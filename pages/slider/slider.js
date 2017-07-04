@@ -16,14 +16,11 @@ Page({
       sliderValue: value
     });
   },
-  showResult() {
-    this.setData({
-      isShow: true
-    });
-  },
-  closePanel() {
-    this.setData({
-      isShow: false
+  finishHandle() {
+      wx.showToast({
+      title: "恭喜完成EQ5D",
+      icon: "success",
+      duration: 2000
     });
   }
 });

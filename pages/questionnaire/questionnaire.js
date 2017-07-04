@@ -17,7 +17,7 @@ Page({
       },
       {
         title: "自我照顾",
-        padColor: "#cc463d",
+        padColor: "#dd6549",
         name: "sc",
         items: [
           { name: "sc1", value: "我洗澡或穿衣服没有困难" },
@@ -114,7 +114,7 @@ Page({
           data[result[key]] = 0.258;
         }
       } else {
-        return this.showToast("问卷还没有完成，不能进行下一项测试", "/images/error.png");
+        return this.showToast("请完成问卷", "/images/error.png");
       }
     }
 

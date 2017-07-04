@@ -14,7 +14,7 @@
 
     </view>
 
-    <button style="margin: 0 20rpx;" type="primary" size="20" bindtap="showResult"> 提交问卷 </button>
+    <button style="margin: 0 20rpx;" type="primary" size="20" bindtap="finishHandle"> 提交问卷 </button>
     
 </view>
 
