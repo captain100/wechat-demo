@@ -12,7 +12,7 @@
         <view wx:if="{{appInfo[i + 2]}}" class="app-icon">
             <view class="app-text" data-type="{{appInfo[i + 2].type}}" style="background:{{appInfo[i + 2].color}};">{{appInfo[i + 2].title}}</view>
         </view>
-        <view wx:if="{{appInfo[i + 3]}}" class="app-icon" bindtap="onAddToPackage">
+        <view wx:if="{{appInfo[i + 3]}}" class="app-icon" >
             <view class="app-text" data-type="{{appInfo[i + 3].type}}" style="background:{{appInfo[i + 3].color}};">{{appInfo[i + 3].title}}</view>
         </view>
       </view>

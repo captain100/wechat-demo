@@ -3,6 +3,7 @@
 
   <view>小明的票 : {{a}}</view>
   <view>小红的票 : {{b}}</view>
+
   
   <button type="default" size="defaultSize" data-type="a" bindtap="changeNum">支持小明</button>
   <button type="default" size="defaultSize" data-type="b" bindtap="changeNum">支持小红</button>

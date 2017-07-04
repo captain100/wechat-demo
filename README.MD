@@ -12,3 +12,5 @@ AppSecret: 02fbfb7f2e4036d23eae501ec3eb2db6
 
 - 开发优惠券功能
 - EQ5D问卷功能
+- Websocket 投票小程序
+- 基于webSocket 的游戏摇杆

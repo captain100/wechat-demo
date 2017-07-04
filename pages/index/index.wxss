@@ -46,7 +46,7 @@
   box-shadow: 0 0 16rpx #CCC;
   text-align: center;
   line-height: 155rpx;
-  font-size: 80rpx;
+  font-size: 50rpx;
   border-radius: 20rpx;
   overflow: hidden;
 }

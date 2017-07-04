@@ -11,7 +11,7 @@ Page({
   onLoad() {
     let that = this;
     wx.connectSocket({
-      url: "ws://4chpjm.natappfree.cc",
+      url: "ws://zh9hy6.natappfree.cc",
       success: result => console.log(result),
       fail: error => console.log(error)
     });

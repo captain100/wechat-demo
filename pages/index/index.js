@@ -23,10 +23,13 @@ Page({
         type: 'questionnaire'
       },
       {
-        title: '投',
+        title: '投票',
         color: '#cf3e36',
         type: 'toupiao'
-
+      }, {
+        title: '摇杆',
+        color: '#cf3e36',
+        type: 'yaogan'
       }
     ]
 
@@ -84,7 +87,8 @@ function selectPageByType(type){
   const selectObj = {
     weChatCard: `${path}/card/card`,
     questionnaire: `${path}/questionnaire/questionnaire`,
-    toupiao: `${path}/toupiao/toupiao`
+    toupiao: `${path}/toupiao/toupiao`,
+    yaogan: `${path}/yaogan/yaogan`
   }
   return selectObj[type]
 }
