@@ -1,3 +1,5 @@
+const url = 'ws://6h3wsg.natappfree.cc/socket'
+
 Page({
   data: {
     connect: false
@@ -9,9 +11,10 @@ Page({
     }
   },
   onLoad() {
+    console.log(1111, url)
     let that = this;
     wx.connectSocket({
-      url: "ws://4chpjm.natappfree.cc",
+      url,
       success: result => console.log(result),
       fail: error => console.log(error)
     });

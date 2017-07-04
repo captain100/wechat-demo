@@ -71,7 +71,6 @@ Page({
   onAddToPackage: function(e){
     console.log('添加card to package', e)
     const type = e.target.dataset.type
-    console.log(selectPageByType(type))
     wx.navigateTo({
       url: selectPageByType(type)
     })
