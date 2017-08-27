@@ -1,0 +1,95 @@
+.wrapper {
+    margin: 20rpx;
+    background: #fff;
+    color: #5e5e5e;
+}
+
+.wrapper .header {
+    font-family: sans-serif;
+    font-size: 40rpx;
+    text-indent:60rpx;
+    line-height: 55rpx;
+}
+
+.wrapper .header text {
+    font-weight: 900;
+    color: #cc463d;    
+}
+.context {
+    margin: 35rpx 0;
+}
+.question {
+    display: block;
+    font-weight: 900;
+    text-indent: 10rpx;
+    line-height: 50rpx;
+    margin-bottom: 20rpx;
+}
+.question-tiems {
+    padding: 10rpx 0 10rpx 30rpx ;
+    box-shadow: 0 0 15rpx #CCC; 
+    position: relative;
+}
+.padding-left-color {
+    top: 15rpx;
+    left: 0;
+    width:18rpx;
+    bottom: 15rpx;
+    position: absolute;
+}
+
+.radio-group {
+    padding: 10rpx;
+}
+.radio {
+    display: flex;
+    line-height: 55rpx;
+    flex-direction: row-reverse;
+    justify-content: space-between;    
+}
+
+
+.result-panel {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 99;   
+}
+.result-panel .panel-context {
+    width: 500rpx;
+    height: 700rpx;
+    background: #24a234;
+    color: #fff;    
+    text-align: center;
+    font-size: 100rpx;
+    vertical-align: center;
+    padding: 20rpx;
+    position: relative;
+}
+
+.result-panel .panel-context .logo {
+    width: 180rpx;
+    height: 180rpx;
+    margin:30rpx 0;
+}
+
+.result-panel .panel-context .title {
+    font-size: 40rpx;
+}
+.result-panel .panel-context .score {
+    margin-top: 60rpx;
+}
+
+.result-panel .panel-context button {
+    position: absolute;
+    bottom: 40rpx;
+    left: 20rpx;
+    right: 20rpx;
+    background: #fdbd28;
+}

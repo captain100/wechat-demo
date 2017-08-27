@@ -35,6 +35,25 @@ Page({
         title: "患者",
         color: "",
         type: "patient"
+      },{
+        title: '投票',
+        color: '#cf3e36',
+        type: 'toupiao'
+      }, 
+      {
+        title: '摇杆',
+        color: '#cf3e36',
+        type: 'yaogan'
+      },
+      {
+        title: '投票1',
+        color: '#cf3e36',
+        type: 'etqs'
+      }, 
+      {
+        title: '投票2',
+        color: '#cf3e36',
+        type: 'eq5d5ly'
       }
     ]
   },
@@ -91,7 +110,10 @@ function selectPageByType(type) {
     questionnaire: `${path}/questionnaire/questionnaire`,
     toupiao: `${path}/toupiao/toupiao`,
     yaogan: `${path}/yaogan/yaogan`,
-    patient: `${path}/patient/patient`
-  };
-  return selectObj[type];
+    patient: `${path}/patient/patient`,
+    etqs: `${path}/etqs/etqs`,
+    eq5d5ly: `${path}/eq5d5ly/eq5d5ly`
+
+  }
+  return selectObj[type]
 }
