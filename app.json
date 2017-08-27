@@ -1,10 +1,12 @@
 {
     "pages": [
-        "pages/index/index",
-        "pages/toupiao/toupiao",
-        "pages/questionnaire/questionnaire",    
+        "pages/questionnaire/questionnaire", 
         "pages/slider/slider",
         "pages/progress/progress",
+        "pages/index/index",
+        "pages/patient/patient",
+        "pages/yaogan/yaogan",
+        "pages/toupiao/toupiao",
         "pages/logs/logs",
         "pages/card/card"
     ],

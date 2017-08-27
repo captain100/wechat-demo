@@ -1,0 +1,32 @@
+.wrapper {
+    margin: 20rpx;
+    color: #5e5e5e;
+    line-height: 50rpx;
+}
+
+.section_gap {
+    margin-bottom: 40rpx;
+}
+.section__title {
+    font-size: 50rpx;
+    font-weight: 900;
+    margin-bottom: 20rpx;
+}
+.radio {
+    display: block;
+}
+.need-input {
+    display: inline-block;
+    width: 100rpx;
+    border-bottom: 1px solid #5e5e5e;
+    margin: 0 10rpx;
+    text-align: center;
+    /*background: rgba(226,172,172,.2);*/
+}
+.list {
+    margin-top: 20rpx;
+}
+.list view::before {
+    content: '*';
+    margin-right: 10rpx;
+}

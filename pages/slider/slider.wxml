@@ -16,6 +16,24 @@
 
     <button style="margin: 0 20rpx;" type="primary" size="20" bindtap="finishHandle"> 提交问卷 </button>
     
+    <view wx:if="{{isShow}}" class="result-panel">
+        <view class="panel-context" bindtap="closePanel">
+            <block wx:if="{{!isOpen}}">
+                <view class="header"></view>
+                <view animation="{{animationData}}" class="button" bindtap="openRedPack">拆红包</view>
+                <view class="title">恭喜你完成EQ5D测试</view>  
+            </block>
+            <block wx:if="{{isOpen}}">
+                <image src="/images/money.png" mode="aspectFit" class="logo" />
+                <view class="title" style="margin-top: 150rpx;">
+                    恭喜你获得
+                    <text>{{money / 10}}元</text>
+                    的奖励
+                </view>
+            </block>
+        </view>
+    </view>
+
 </view>
 
 

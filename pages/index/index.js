@@ -7,29 +7,36 @@ Page({
     userInfo: {},
     appInfo: [
       {
-        title: '卡',
-        color: 'yellow',
-        type: 'weChatCard'
+        title: "卡",
+        color: "yellow",
+        type: "weChatCard"
       },
       {
-        title: '图片',
-        color: '',
-        type: 'weChatCard'
-
+        title: "图片",
+        color: "",
+        type: "weChatCard"
       },
       {
-        title: '卷',
-        color: '',
-        type: 'questionnaire'
+        title: "卷",
+        color: "",
+        type: "questionnaire"
       },
       {
-        title: '投',
-        color: '#cf3e36',
-        type: 'toupiao'
-
+        title: "投票",
+        color: "#cf3e36",
+        type: "toupiao"
+      },
+      {
+        title: "摇杆",
+        color: "#cf3e36",
+        type: "yaogan"
+      },
+      {
+        title: "患者",
+        color: "",
+        type: "patient"
       }
     ]
-
   },
   //事件处理函数
   bindViewTap: function() {
@@ -43,9 +50,9 @@ Page({
       success: function(res) {
         that.setData({
           iConWidth: res.screenWidth / 4
-        })
+        });
       }
-    })
+    });
 
     wx.showShareMenu({
       withShareTicket: true
@@ -68,22 +75,23 @@ Page({
       }
     };
   },
-  onAddToPackage: function(e){
-    console.log('添加card to package', e)
-    const type = e.target.dataset.type
+  onAddToPackage: function(e) {
+    console.log("添加card to package", e);
+    const type = e.target.dataset.type;
     wx.navigateTo({
       url: selectPageByType(type)
-    })
-  } 
+    });
+  }
 });
 
-
-function selectPageByType(type){
-  const path = '/pages'
+function selectPageByType(type) {
+  const path = "/pages";
   const selectObj = {
     weChatCard: `${path}/card/card`,
     questionnaire: `${path}/questionnaire/questionnaire`,
-    toupiao: `${path}/toupiao/toupiao`
-  }
-  return selectObj[type]
+    toupiao: `${path}/toupiao/toupiao`,
+    yaogan: `${path}/yaogan/yaogan`,
+    patient: `${path}/patient/patient`
+  };
+  return selectObj[type];
 }

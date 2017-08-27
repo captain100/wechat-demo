@@ -1,0 +1,60 @@
+<view class="wrapper">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section section_gap">
+        <view class="section__title">患者住院信息</view>
+        <view>患者过去3个月住院<input type="number" class="need-input"/>天， 住院总花费<input type="number" class="need-input" /> 元</view>
+    </view>
+    <view class="section section_gap">
+        <view class="section__title">门诊就诊信息</view>
+        <view>患者过去3个月门诊就诊<input type="number" class="need-input"/>次， 每次就诊花费<input type="number" class="need-input"/>元</view>
+        <view> 患者过去3个月除住院外，因病请假 <input type="number" class="need-input"/>天</view>
+    </view>
+    <view class="section section_gap">
+        <view class="section__title">用药信息</view>
+        <view>患者过去3个月西药花费<input type="number" class="need-input"/>元， 中药及中成药花费<input type="number" class="need-input"/>元</view>
+    </view>
+
+    <view class="section section_gap">
+        <view class="section__title">患病期间照料者信息</view>
+        <view>家人照料：因照料患者需要请假<input type="number" class="need-input"/>天/月</view>
+        <view>请保姆照料：花费<input type="number" class="need-input"/>元/月</view>
+    </view>
+
+    <view class="section section_gap">
+        <view class="section__title">医疗保险信息</view>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="1" checked="{{item.checked}}"/>自费
+            </label>
+            <label class="radio">  
+                <radio value="2" checked="{{item.checked}}"/>城镇职工医疗保险
+            </label>
+            <label class="radio">
+                <radio value="3" checked="{{item.checked}}"/>新型农村合作医疗保险
+            </label>
+            <label class="radio">
+                <radio value="4" checked="{{item.checked}}"/>公费医疗
+            </label>
+            <label class="radio">
+                <radio value="5" checked="{{item.checked}}"/>商保
+            </label>
+            <label class="radio">
+                <radio value="6" checked="{{item.checked}}"/>城镇居民医疗保险
+            </label>
+        </radio-group>
+    </view>
+        
+    <view class="section section_gap">
+        <view class="section__title">疾病支付意愿</view>
+        <view>假设不存在任何保险报销，患者愿意支付<input type="number" class="need-input"/>倍家庭年收入，是自己从目前的疾病状况回到如下完全健康状态</view>
+        <view class="list">
+            <view>你可以四处走动，没有任何问题</view>
+            <view>你能照顾自己，没有任何问题</view>
+            <view>你能从事平常活动，没有任何问题</view>
+            <view>你没有任何的疼痛或不舒服</view>
+            <view>你不觉得焦虑或沮丧</view>
+        </view>
+    </view>
+    <button type="primary" formType="submit" >提交</button>
+    </form>
+</view>

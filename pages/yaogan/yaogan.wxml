@@ -1,0 +1,22 @@
+<view>
+  <view class="title">摇杆游戏</view>
+  <view ></view>
+  <movable-area class="yaogan-wrapper" >
+    <movable-view direction="all" bindtouchmove="touchmove" bindtouchend="touchcancel" class="yaogan-bar" x="{{x}}" y="{{y}}">
+    </movable-view>
+  </movable-area>
+  <view class="button-group">
+    <view class="yaogan-button">
+      A
+    </view>
+    <view class="yaogan-button">
+      B
+    </view>
+    <view class="yaogan-button">
+      C
+    </view>
+    <view class="yaogan-button">
+      D
+    </view>
+  </view>
+</view>
