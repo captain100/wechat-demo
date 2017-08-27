@@ -1,15 +1,11 @@
 {
     "pages": [
-<<<<<<< HEAD
-        "pages/questionnaire/questionnaire", 
-=======
         "pages/index/index",
         "pages/eq5d5ly/eq5d5ly",
         "pages/etqs/etqs",
         "pages/yaogan/yaogan",
         "pages/toupiao/toupiao",
         "pages/questionnaire/questionnaire",    
->>>>>>> be6de00ae7e90fae4c4899c03dd120968f6612cf
         "pages/slider/slider",
         "pages/progress/progress",
         "pages/index/index",
