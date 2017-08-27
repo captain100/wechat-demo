@@ -1,7 +1,8 @@
-Ï<view class="wrapper">
+<view class="wrapper">
     <view class="header">
         在每个标题下，请在能最恰当地描述您<text>今天</text>的健康状况的<text>一个</text>方格打'✓'
     </view>
+
     <form bindsubmit="formSubmit">
         <block wx:for="{{questions}}"  wx:for-item="itemName">
             <view class="context">
